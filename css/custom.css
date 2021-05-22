@@ -3,3 +3,29 @@ html {
   font-family: 'Roboto', sans-serif;
   ;
 }
+
+#header {
+  background-color: transparent;
+  transition: background ease-out .2s;
+  width: 100%;
+}
+
+#header .navbar-collapse {
+  width: auto;
+}
+
+#header .nav-link {
+  border-bottom: 4px solid transparent;
+  color: var(--bs-dark);
+  font-weight: 500;
+  margin-left: 0.938rem;
+  margin-right: 0.938rem;
+  text-transform: uppercase;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#header .nav-link:hover {
+  border-bottom: 4px solid var(--secondary);
+  color: var(--secondary);
+}
