@@ -1,3 +1,19 @@
+/* General */
+.block {
+  margin-bottom: 7.5rem;
+}
+
+/* Titles */
+.title {
+  text-transform: uppercase;
+}
+
+.sub-title {
+  color: var(--medium);
+  font-weight: 400;
+}
+
+/* Buttons */
 .button {
   font-weight: 500;
   text-transform: lowercase;
