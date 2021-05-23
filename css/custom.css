@@ -1,9 +1,11 @@
+/* General */
 body,
 html {
   font-family: 'Roboto', sans-serif;
   ;
 }
 
+/* Header styles */
 #header {
   background-color: transparent;
   transition: background ease-out .2s;
@@ -26,4 +28,20 @@ html {
 #header .nav-link:hover {
   border-bottom: 4px solid var(--secondary);
   color: var(--secondary);
+}
+
+/* Slider Styles */
+.slider {
+  background: url(../assets/slider-bg.svg) no-repeat center bottom;
+  background-size: contain;
+}
+
+.slider h1 {
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.slider h4 {
+  font-size: 1.125rem;
+  text-transform: uppercase;
 }
