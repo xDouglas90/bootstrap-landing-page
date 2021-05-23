@@ -19,45 +19,59 @@
 
 <body>
   <!-- Header begins -->
-  <header id="header" role="banner">
-    <div class="container">
-      <h1 class="hidden">Projeto de Estudos em Bootstrap 5</h1>
-      <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
-        <h1 class="hidden">Menu de Navegação</h1>
-        <a class="navbar-brand" href="#">
-          <p class="hidden">Logo</p>
-          <img src="assets/logo.svg" alt="Logo" title="Logo" class="image-fluid">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Página Inicial</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Sobre</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Serviços</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Portfólio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contato</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
+  <header id="header" class="container" role="banner">
+    <h1 class="hidden">Projeto de Estudos em Bootstrap 5</h1>
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <h1 class="hidden">Menu de Navegação</h1>
+      <a class="navbar-brand" href="#">
+        <p class="hidden">Logo</p>
+        <img src="assets/logo.svg" alt="Logo" title="Logo" class="image-fluid">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Página Inicial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Serviços</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Portfólio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
   </header>
   <!-- Header ends -->
-
-
-
+  <!-- Main begins -->
+  <main id="main" role="main">
+    <!-- Slider Section begins -->
+    <section class="slider container">
+      <div class="row">
+        <div class="col-md-4 align-self-center">
+          <h1>Lorem ipsum dolor sit amet</h1>
+          <h4>Et Sumi kapa namur aondeai rocus pocus</h4>
+          <a href="" class="btn btn-danger">Saiba mais</a>
+          <a href="" class="btn btn-danger">Contato</a>
+        </div>
+        <div class="col-md-8 align-self-center text-center">
+          <img src="assets/slider.svg" class="img-fluid" alt="Imagem do Slider">
+        </div>
+      </div>
+    </section>
+    <!-- Slider Section ends -->
+  </main>
+  <!-- Main ends -->
   <!-- Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
