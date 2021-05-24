@@ -4,12 +4,34 @@
     margin-left: 0.938rem;
     margin-right: 0.938rem;
   }
+
+  .contact img {
+    left: 1rem;
+    top: -1.4rem;
+    width: 9rem;
+  }
 }
 
 /* Max Widths */
 @media (max-width: 991.98px) {
   #header .navbar-collapse {
     width: 100%;
+  }
+
+  .contact h2 {
+    font-size: 1.4rem;
+    width: 16rem;
+  }
+
+  .contact img {
+    left: 1rem;
+    top: -1.4rem;
+    width: 5.625rem;
+  }
+
+  .contact form {
+    width: 100%;
+    flex-direction: column;
   }
 }
 
@@ -28,5 +50,14 @@
 
   .client-img img {
     max-width: 9.375rem;
+  }
+
+  .contact {
+    padding: 3.75rem 1.875rem 3.125rem 1.875rem;
+  }
+
+  .contact form {
+    width: 100%;
+    flex-direction: column;
   }
 }
