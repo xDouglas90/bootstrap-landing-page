@@ -212,3 +212,42 @@ a.client-link:hover img {
 .name span {
   color: var(--bs-dark);
 }
+
+/* Footer contact field*/
+
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  background-color: var(--secondary);
+  color: var(--bs-white);
+  padding: 7.5rem 1.875rem;
+  position: relative;
+}
+
+.contact img {
+  position: absolute;
+  left: 1.875rem;
+  top: -1.8rem;
+}
+
+.contact form {
+  display: flex;
+  width: 60%;
+}
+
+.contact form input {
+  background-color: var(--secondary);
+  border: 2px solid var(--bs-white);
+  border-radius: 5px;
+  color: var(--bs-white);
+  font-weight: 600;
+}
+
+.form-control,
+.form-control::placeholder {
+  background: none;
+  color: var(--bs-white);
+}
