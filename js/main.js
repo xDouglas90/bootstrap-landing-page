@@ -14,5 +14,10 @@ jQuery(document).ready(function ($) {
   btns.click(function (e) {
     $("#recent-services .button-group button").removeClass("active");
     e.target.classList.add("active");
+
+    let selector = $(e.target).attr("data-filter");
+    $("#recent-services .grid").isotope({
+      filter: selector,
+    })
   });
 });
