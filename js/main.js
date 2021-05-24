@@ -18,6 +18,12 @@ jQuery(document).ready(function ($) {
     let selector = $(e.target).attr("data-filter");
     $("#recent-services .grid").isotope({
       filter: selector,
-    })
+    });
   });
+
+  $(window).on("load", function () {
+    $("#recent-services .grid").isotope({
+      filter: "*",
+    });
+  })
 });
