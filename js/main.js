@@ -25,5 +25,16 @@ jQuery(document).ready(function ($) {
     $("#recent-services .grid").isotope({
       filter: "*",
     });
-  })
+  });
+
+  // Magnific Pop Up
+  $(".grid .popup-link").magnificPopup({
+    type: "image",
+    gallery: {
+      enabled: true,
+      tPrev: "Anterior",
+      tNext: "Próxima",
+      tCounter: "%curr% de %total%",
+    },
+  });
 });
