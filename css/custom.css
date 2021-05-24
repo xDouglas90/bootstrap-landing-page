@@ -251,3 +251,18 @@ a.client-link:hover img {
   background: none;
   color: var(--bs-white);
 }
+
+/* Footer social links */
+
+.social-links {
+  max-width: 17rem;
+}
+
+.social-links i {
+  color: var(--primary-dark);
+  font-size: 2rem;
+}
+
+.social-links i:not(:last-child) {
+  margin-right: 1rem;
+}
