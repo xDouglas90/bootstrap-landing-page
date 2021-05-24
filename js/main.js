@@ -7,4 +7,12 @@ jQuery(document).ready(function ($) {
       $("#header").removeClass("sticky-top");
     }
   };
+
+  // Isotope
+  let btns = $("#recent-services .button-group button");
+
+  btns.click(function (e) {
+    $("#recent-services .button-group button").removeClass("active");
+    e.target.classList.add("active");
+  });
 });
