@@ -14,7 +14,7 @@ html {
 
 .sticky-top {
   background-color: #fff !important;
-  box-shadow: 0 0 30px 0 rgba(0, 0, 0, .2);
+  box-shadow: 0 0 30px 0 var(--shadow);
   z-index: 9999;
 }
 
@@ -36,23 +36,23 @@ html {
   color: var(--secondary);
 }
 
-/* Slider */
-.slider {
+/* Slider Section*/
+#slider {
   background: url(../assets/slider-bg.svg) no-repeat center bottom;
   background-size: contain;
 }
 
-.slider h1 {
+#slider h1 {
   font-weight: 900;
   text-transform: uppercase;
 }
 
-.slider h4 {
+#slider h4 {
   font-size: 1.125rem;
   text-transform: uppercase;
 }
 
-/* Services */
+/* Services Section*/
 
 .spotlight {
   background-color: var(--light);
@@ -67,7 +67,7 @@ html {
 
 .spotlight:hover {
   background-color: var(--bs-white);
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, .2);
+  box-shadow: 0px 0px 10px 0px var(--shadow);
   transform: scale(1.05);
 }
 
@@ -85,4 +85,76 @@ html {
 
 .img-container img {
   max-height: 10rem;
+}
+
+/* Clients Section*/
+
+a.client-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--bs-white);
+  border: solid 1px var(--light);
+  height: 6.25rem;
+  padding: 0 15px;
+  transition: ease-out all .2s;
+}
+
+a.client-link:hover {
+  box-shadow: 0 0 15px 0 var(--shadow);
+  transform: scale(1.2);
+}
+
+a.client-link img {
+  filter: grayscale(100%);
+  max-height: 70px;
+  opacity: .5;
+  width: 100%;
+}
+
+a.client-link:hover img {
+  filter: none;
+  opacity: 1;
+}
+
+.client-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--light);
+  border-radius: 5px;
+  padding: 30px;
+}
+
+.client-img {
+  display: flex;
+  align-items: center;
+  color: var(--dark);
+  font-size: 1.5rem;
+  line-height: 1.625rem;
+  margin-left: -70px;
+  padding: 60px 0;
+}
+
+.client-img span {
+  color: var(--secondary);
+  font-size: 6.875rem;
+  font-weight: bolder;
+  letter-spacing: -10px;
+  line-height: 6.875rem;
+}
+
+.client-tel {
+  display: flex;
+  align-items: center;
+  color: var(--dark);
+  font-size: 0.875rem;
+}
+
+.client-tel span {
+  color: var(--dark);
+  display: block;
+  font-size: 1.563rem;
+  font-weight: bolder;
 }

@@ -21,4 +21,12 @@
   .img-container img {
     max-height: 7.5rem;
   }
+
+  .client-img {
+    padding: 0.625rem 0 1.875rem 0;
+  }
+
+  .client-img img {
+    max-width: 9.375rem;
+  }
 }
