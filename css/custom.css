@@ -191,3 +191,24 @@ a.client-link:hover img {
 .button-group button.active {
   color: var(--primary);
 }
+
+/* Attest Section */
+
+.attest-item {
+  background-color: var(--light);
+  border-radius: 5px;
+  display: flex;
+  padding: 1.875rem;
+}
+
+.quote {
+  max-width: 2.188rem;
+}
+
+.name {
+  color: var(--medium);
+}
+
+.name span {
+  color: var(--dark);
+}
