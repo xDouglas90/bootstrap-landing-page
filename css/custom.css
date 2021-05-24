@@ -206,9 +206,9 @@ a.client-link:hover img {
 }
 
 .name {
-  color: var(--medium);
+  color: var(--dark);
 }
 
 .name span {
-  color: var(--dark);
+  color: var(--bs-dark);
 }
