@@ -14,7 +14,7 @@ html {
 
 .sticky-top {
   background-color: #fff !important;
-  box-shadow: 0 0 30px 0 var(--shadow);
+  box-shadow: var(--box-shadow-thin);
   z-index: 9999;
 }
 
@@ -62,12 +62,12 @@ html {
   padding: 1.25rem;
   text-align: center;
   text-decoration: none;
-  transition: all ease-out .2s;
+  transition: var(--transition);
 }
 
 .spotlight:hover {
   background-color: var(--bs-white);
-  box-shadow: 0px 0px 10px 0px var(--shadow);
+  box-shadow: var(--box-shadow-thin);
   transform: scale(1.05);
 }
 
@@ -98,11 +98,11 @@ a.client-link {
   border: solid 1px var(--light);
   height: 6.25rem;
   padding: 0 15px;
-  transition: ease-out all .2s;
+  transition: var(--transition);
 }
 
 a.client-link:hover {
-  box-shadow: 0 0 15px 0 var(--shadow);
+  box-shadow: var(--box-shadow-medium);
   transform: scale(1.2);
 }
 
@@ -157,4 +157,37 @@ a.client-link:hover img {
   display: block;
   font-size: 1.563rem;
   font-weight: bolder;
+}
+
+/* Recent Services Section */
+
+.badge {
+  font-weight: 400;
+}
+
+.element-item img {
+  border-radius: 5px;
+  transition: var(--transition);
+}
+
+.element-item img:hover {
+  box-shadow: var(--box-shadow-lg);
+}
+
+.button-group button {
+  background: none;
+  border: none;
+  font-weight: 700;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  text-transform: uppercase;
+}
+
+.button-group button+button {
+  margin-left: 1.875rem;
+}
+
+.button-group button.active {
+  color: var(--primary);
 }
