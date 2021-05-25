@@ -22,34 +22,35 @@
 
 <body>
   <!-- Header begins -->
-  <header id="header" class="container" role="banner">
-    <h1 class="visually-hidden">Projeto de Estudos em Bootstrap 5</h1>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <h1 class="visually-hidden">Menu de Navegação</h1>
-      <a class="navbar-brand" href="#">
+  <header id="header" class="container" role="navigation">
+    <h1 role="heading" class="visually-hidden">Projeto de Estudos em Bootstrap 5</h1>
+    <nav role="menu" class="navbar navbar-expand-lg navbar-light">
+      <h1 role="heading" class="visually-hidden">Menu de Navegação</h1>
+      <a role="link" aria-label="Logo com link para pagina inicial" class="navbar-brand" href="#">
         <p class="visually-hidden">Logo</p>
-        <img src="assets/logo.svg" alt="Logo" title="Logo" class="image-fluid">
+        <img role="img" aria-label="Logo" src="assets/logo.svg" alt="Logo" title="Logo" class="image-fluid">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#header">Página Inicial</a>
+        <ul class="navbar-nav" role="menubar">
+          <li class="nav-item" role="menuitem">
+            <a role="link" aria-label="Página Inicial" class="nav-link active" aria-current="page" href="#header">Página
+              Inicial</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">Sobre</a>
+          <li class="nav-item" role="menuitem">
+            <a role="link" aria-label="Seção Sobre a Empresa" class="nav-link" href="#about">Sobre</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#services">Serviços</a>
+          <li class="nav-item" role="menuitem">
+            <a role="link" aria-label="Seção de Serviços" class="nav-link" href="#services">Serviços</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#recent-services">Portfólio</a>
+          <li class="nav-item" role="menuitem">
+            <a role="link" aria-label="Seção Sobre de Portfólio" class="nav-link" href="#recent-services">Portfólio</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contato</a>
+          <li class="nav-item" role="menuitem">
+            <a role="link" aria-label="Seção Sobre de Contato" class="nav-link" href="#contact">Contato</a>
           </li>
         </ul>
       </div>
@@ -60,16 +61,19 @@
   <!-- Main begins -->
   <main id="main" role="main">
     <!-- Slider Section begins -->
-    <section id="slider" class="container pt-5 block">
+    <section id="slider" class="container pt-5 block" role="slider">
       <div class="row">
         <div class="col-md-4 align-self-center mb-md-0 mb-4">
-          <h1>Lorem ipsum dolor sit amet</h1>
-          <h4 class="mb-4">Et Sumi kapa namur aondeai rocus pocus</h4>
-          <a href="" class="btn button button-primary d-md-inline-block d-block mb-md-0 mb-2 mr-md-2">Saiba mais</a>
-          <a href="" class="btn button button-primary-outline d-md-inline-block d-block">Contato</a>
+          <h1 role="heading">Lorem ipsum dolor sit amet</h1>
+          <h4 role="heading" class="mb-4">Et Sumi kapa namur aondeai rocus pocus</h4>
+          <a role="button" aria-label="Saiba Mais" href="#about"
+            class="btn button button-primary d-md-inline-block d-block mb-md-0 mb-2 mr-md-2">Saiba mais</a>
+          <a role="button" aria-label="Contato" ref="#contact"
+            class="btn button button-primary-outline d-md-inline-block d-block">Contato</a>
         </div>
         <div class="col-md-8 align-self-center text-center">
-          <img src="assets/slider.svg" class="img-fluid" alt="Imagem do Slider">
+          <img role="img" aria-label="Imagem do Slider" src="assets/slider.svg" class="img-fluid"
+            alt="Imagem do Slider">
         </div>
       </div>
     </section>
@@ -79,11 +83,13 @@
     <section id="about" class="container block">
       <div class="row">
         <div class="col-md-4 text-center align-self-center order-md-1 order-2">
-          <img src="assets/sobre.svg" alt="Imagem seção sobre a empresa" class="img-fluid">
+          <img role="img" aria-label="Imagem seção sobre a empresa" src="assets/sobre.svg"
+            alt="Imagem seção sobre a empresa" class="img-fluid">
         </div>
         <div class="col-md-8 align-self-center mb-md-0 mb-4 order-md-2 order-1">
-          <h2 class="title">At vero eos et accusamus et iusto</h2>
-          <h4 class="sub-title mb-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+          <h2 role="heading" class="title">At vero eos et accusamus et iusto</h2>
+          <h4 role="heading" class="sub-title mb-4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium
             doloremque
           </h4>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolor reiciendis consequatur voluptatum,
@@ -91,7 +97,8 @@
             voluptates sit. Natus? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam ipsa numquam cum
             maiores dicta quis ea officia nesciunt? Minima ducimus tenetur molestias eligendi reprehenderit cupiditate
             deserunt rerum amet totam ex?</p>
-          <a href="" class="btn button button-primary d-md-inline-block d-block mb-md-0 mb-2 me-md-2">Entre em
+          <a role="button" aria-label="Entre em contato" href=""
+            class="btn button button-primary d-md-inline-block d-block mb-md-0 mb-2 me-md-2">Entre em
             contato</a>
         </div>
       </div>
@@ -100,42 +107,46 @@
 
     <!-- Services Section begins -->
     <section id="services" class="container block">
-      <h2 class="title text-center">Nossos Serviços</h2>
-      <h4 class="sub-title text-center mb-4">Et sumi kapa namur aondeai rocus pocus</h4>
+      <h2 role="heading" class="title text-center">Nossos Serviços</h2>
+      <h4 role="heading" class="sub-title text-center mb-4">Et sumi kapa namur aondeai rocus pocus</h4>
       <div class="row">
         <article class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <a href="" class="spotlight">
+          <a role="link" aria-label="Serviço em Destaque-1" href="" class="spotlight">
             <div class="img-container mb-3">
-              <img src="assets/destaque1.svg" class="img-fluid" alt="Imagem de Serviço em Destaque">
+              <img role="img" aria-label="Imagem de Serviço em Destaque-1" src="assets/destaque1.svg" class="img-fluid"
+                alt="Imagem de Serviço em Destaque">
+            </div>
+            <h5 role="heading" class="text-uppercase">Et sumi kapo</h5>
+            <p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
+          </a>
+        </article>
+        <article class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <a role="link" aria-label="Serviço em Destaque-2" href="" class="spotlight">
+            <div class="img-container mb-3">
+              <img role="img" aria-label="Imagem de Serviço em Destaque-2" src="assets/destaque2.svg" class="img-fluid"
+                alt="Imagem de Serviço em Destaque">
+            </div>
+            <h5 role="heading" class="text-uppercase">Et sumi kapo</h5>
+            <p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
+          </a>
+        </article>
+        <article class="col-lg-3 col-md-6 mb-4 mb-lg-0">
+          <a role="link" aria-label="Serviço em Destaque-3" href="" class="spotlight">
+            <div class="img-container mb-3">
+              <img role="img" aria-label="Imagem de Serviço em Destaque-3" src="assets/destaque3.svg" class="img-fluid"
+                alt="Imagem de Serviço em Destaque">
             </div>
             <h5 class="text-uppercase">Et sumi kapo</h5>
             <p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
           </a>
         </article>
         <article class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <a href="" class="spotlight">
+          <a role="link" aria-label="Serviço em Destaque-4" href="" class="spotlight">
             <div class="img-container mb-3">
-              <img src="assets/destaque2.svg" class="img-fluid" alt="Imagem de Serviço em Destaque">
+              <img role="img" aria-label="Imagem de Serviço em Destaque-4" src="assets/destaque4.svg" class="img-fluid"
+                alt="Imagem de Serviço em Destaque">
             </div>
-            <h5 class="text-uppercase">Et sumi kapo</h5>
-            <p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
-          </a>
-        </article>
-        <article class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <a href="" class="spotlight">
-            <div class="img-container mb-3">
-              <img src="assets/destaque3.svg" class="img-fluid" alt="Imagem de Serviço em Destaque">
-            </div>
-            <h5 class="text-uppercase">Et sumi kapo</h5>
-            <p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
-          </a>
-        </article>
-        <article class="col-lg-3 col-md-6 mb-4 mb-lg-0">
-          <a href="" class="spotlight">
-            <div class="img-container mb-3">
-              <img src="assets/destaque4.svg" class="img-fluid" alt="Imagem de Serviço em Destaque">
-            </div>
-            <h5 class="text-uppercase">Et sumi kapo</h5>
+            <h5 role="heading" class="text-uppercase">Et sumi kapo</h5>
             <p class="mb-0">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium</p>
           </a>
         </article>
@@ -145,62 +156,71 @@
 
     <!-- Clients Section begins -->
     <section id="clients" class="container">
-      <h2 class="visually-hidden">Clientes</h2>
+      <h2 role="heading" class="visually-hidden">Clientes</h2>
       <div class="row">
         <div class="col-md-6 align-self-center">
           <div class="row">
             <div class="col-md-4 col-6 mb-4">
-              <a href="" class="client-link">
+              <a role="link" aria-label="Site do cliente-1" href="" class="client-link">
                 <p class="visually-hidden">Client logo</p>
-                <img src="assets/clients/logo1.svg" alt="Logo de Cliente" class="img-fluid">
+                <img role="img" aria-label="Logo de Cliente-1" src="assets/clients/logo1.svg" alt="Logo de Cliente"
+                  class="img-fluid">
               </a>
             </div>
             <div class="col-md-4 col-6 mb-4">
-              <a href="" class="client-link">
+              <a role="link" aria-label="Site do cliente-2" href="" class="client-link">
                 <p class="visually-hidden">Client logo</p>
-                <img src="assets/clients/logo2.svg" alt="Logo de Cliente" class="img-fluid">
+                <img role="img" aria-label="Logo de Cliente-2" src="assets/clients/logo2.svg" alt="Logo de Cliente"
+                  class="img-fluid">
               </a>
             </div>
             <div class="col-md-4 col-6 mb-4">
-              <a href="" class="client-link">
+              <a role="link" aria-label="Site do cliente-3" href="" class="client-link">
                 <p class="visually-hidden">Client logo</p>
-                <img src="assets/clients/logo3.svg" alt="Logo de Cliente" class="img-fluid">
+                <img role="img" aria-label="Logo de Cliente-3" src="assets/clients/logo3.svg" alt="Logo de Cliente"
+                  class="img-fluid">
               </a>
             </div>
             <div class="col-md-4 col-6 mb-4">
-              <a href="" class="client-link">
+              <a role="link" aria-label="Site do cliente-4" href="" class="client-link">
                 <p class="visually-hidden">Client logo</p>
-                <img src="assets/clients/logo4.svg" alt="Logo de Cliente" class="img-fluid">
+                <img role="img" aria-label="Logo de Cliente-4" src="assets/clients/logo4.svg" alt="Logo de Cliente"
+                  class="img-fluid">
               </a>
             </div>
             <div class="col-md-4 col-6 mb-4">
-              <a href="" class="client-link">
+              <a role="link" aria-label="Site do cliente-5" href="" class="client-link">
                 <p class="visually-hidden">Client logo</p>
-                <img src="assets/clients/logo5.svg" alt="Logo de Cliente" class="img-fluid">
+                <img role="img" aria-label="Logo de Cliente-5" src="assets/clients/logo5.svg" alt="Logo de Cliente"
+                  class="img-fluid">
               </a>
             </div>
             <div class="col-md-4 col-6 mb-4">
-              <a href="" class="client-link">
+              <a role="link" aria-label="Site do cliente-6" href="" class="client-link">
                 <p class="visually-hidden">Client logo</p>
-                <img src="assets/clients/logo6.svg" alt="Logo de Cliente" class="img-fluid">
+                <img role="img" aria-label="Logo de Cliente-6" src="assets/clients/logo6.svg" alt="Logo de Cliente"
+                  class="img-fluid">
               </a>
             </div>
             <div class="col-md-4 col-6 mb-4">
-              <a href="" class="client-link">
+              <a role="link" aria-label="Site do cliente-7" href="" class="client-link">
                 <p class="visually-hidden">Client logo</p>
-                <img src="assets/clients/logo7.svg" alt="Logo de Cliente" class="img-fluid">
+                <img role="img" aria-label="Logo de Cliente-7" src="assets/clients/logo7.svg" alt="Logo de Cliente"
+                  class="img-fluid">
               </a>
             </div>
             <div class="col-md-4 col-6 mb-4">
-              <a href="" class="client-link">
+              <a role="link" aria-label="Site do cliente-8" href="" class="client-link">
                 <p class="visually-hidden">Client logo</p>
-                <img src="assets/clients/logo8.svg" alt="Logo de Cliente" class="img-fluid">
+                <img role="img" aria-label="Logo de Cliente-8" src="assets/clients/logo8.svg" alt="Logo de Cliente"
+                  class="img-fluid">
               </a>
             </div>
             <div class="col-md-4 col-6 mb-4">
-              <a href="" class="client-link">
+              <a role="link" aria-label="Site do cliente-9" href="" class="client-link">
                 <p class="visually-hidden">Client logo</p>
-                <img src="assets/clients/logo9.svg" alt="Logo de Cliente" class="img-fluid">
+                <img role="img" aria-label="Logo de Cliente-9" src="assets/clients/logo9.svg" alt="Logo de Cliente"
+                  class="img-fluid">
               </a>
             </div>
           </div>
@@ -208,14 +228,16 @@
         <div class="col-md-6 align-self-center">
           <div class="client-text ms-5">
             <div class="client-img">
-              <img src="assets/clientes-img.svg" alt="Imagem Notebook" class="img-fluid">
+              <img role="img" aria-label="Imagem de um Notebook" src="assets/clientes-img.svg" alt="Imagem Notebook"
+                class="img-fluid">
               <div class="d-inline-block pl-md-0 pl-3">
                 <p><span>10</span></p>
                 <p>Anos de Experiência</p>
               </div>
             </div>
             <div class="client-tel">
-              <img src="assets/phone.svg" alt="Imagem telefone" class="img-fluid me-3">
+              <img role="img" aria-label="Imagem de um Telefone" src="assets/phone.svg" alt="Imagem telefone"
+                class="img-fluid me-3">
               <div class="d-inline-block pl-3">
                 <p><span>(51) 99999 6699</span></p>
                 <p>Atendimento de segunda a sexta, das 8h às 18h</p>
@@ -228,8 +250,8 @@
     <!-- Clients Section ends -->
     <!-- Recent services section begins -->
     <section id="recent-services" class="container block">
-      <h2 class="title text-center">Serviços Recentes</h2>
-      <h4 class="sub-title text-center mb-4">Et sumi kapa namur aondeai rocus pocus</h4>
+      <h2 role="heading" class="title text-center">Serviços Recentes</h2>
+      <h4 role="heading" class="sub-title text-center mb-4">Et sumi kapa namur aondeai rocus pocus</h4>
       <div class="button-group mb-4">
         <button type="button" class="active" data-filter="*">Todos</button>
         <button type="button" data-filter=".website">Website</button>
@@ -240,11 +262,12 @@
       <div class="row grid">
         <!-- Recent Service item -->
         <div class="col-lg-4 col-6 mb-4 element-item website email">
-          <a href="assets/services/1.jpg" class="popup-link">
+          <a role="link" aria-label="Serviço recente-1" href="assets/services/1.jpg" class="popup-link">
             <p class="visually-hidden">Service item</p>
-            <img src="assets/services/1.jpg" alt="" class="img-fluid mb-2">
+            <img role="img" aria-label="Imagem de Serviço Recente-1" src="assets/services/1.jpg" alt=""
+              class="img-fluid mb-2">
           </a>
-          <h5 class="text-uppercase mb-1">Lorem Ipsun</h5>
+          <h5 role="heading" class="text-uppercase mb-1">Lorem Ipsun</h5>
           <p class="mb-0">
             <span class="badge bg-light text-dark">Website</span>
             <span class="badge bg-light text-dark">Email</span>
@@ -252,22 +275,24 @@
         </div>
         <!-- Recent Service item -->
         <div class="col-lg-4 col-6 mb-4 element-item website">
-          <a href="assets/services/2.jpg" class="popup-link">
+          <a role="link" aria-label="Serviço recente-2" href="assets/services/2.jpg" class="popup-link">
             <p class="visually-hidden">Service item</p>
-            <img src="assets/services/2.jpg" alt="" class="img-fluid mb-2">
+            <img role="img" aria-label="Imagem de Serviço Recente-2" src="assets/services/2.jpg" alt=""
+              class="img-fluid mb-2">
           </a>
-          <h5 class="text-uppercase mb-1">Lorem Ipsun</h5>
+          <h5 role="heading" class="text-uppercase mb-1">Lorem Ipsun</h5>
           <p class="mb-0">
             <span class="badge bg-light text-dark">Website</span>
           </p>
         </div>
         <!-- Recent Service item -->
         <div class="col-lg-4 col-6 mb-4 element-item apps email">
-          <a href="assets/services/3.jpg" class="popup-link">
+          <a role="link" aria-label="Serviço recente-3" href="assets/services/3.jpg" class="popup-link">
             <p class="visually-hidden">Service item</p>
-            <img src="assets/services/3.jpg" alt="" class="img-fluid mb-2">
+            <img role="img" aria-label="Imagem de Serviço Recente-3" src="assets/services/3.jpg" alt=""
+              class="img-fluid mb-2">
           </a>
-          <h5 class="text-uppercase mb-1">Lorem Ipsun</h5>
+          <h5 role="heading" class="text-uppercase mb-1">Lorem Ipsun</h5>
           <p class="mb-0">
             <span class="badge bg-light text-dark">Apps</span>
             <span class="badge bg-light text-dark">Email</span>
@@ -275,11 +300,12 @@
         </div>
         <!-- Recent Service item -->
         <div class="col-lg-4 col-6 mb-4 element-item website email">
-          <a href="assets/services/4.jpg" class="popup-link">
+          <a role="link" aria-label="Serviço recente-4" href="assets/services/4.jpg" class="popup-link">
             <p class="visually-hidden">Service item</p>
-            <img src="assets/services/4.jpg" alt="" class="img-fluid mb-2">
+            <img role="img" aria-label="Imagem de Serviço Recente-4" src="assets/services/4.jpg" alt=""
+              class="img-fluid mb-2">
           </a>
-          <h5 class="text-uppercase mb-1">Lorem Ipsun</h5>
+          <h5 role="heading" class="text-uppercase mb-1">Lorem Ipsun</h5>
           <p class="mb-0">
             <span class="badge bg-light text-dark">Website</span>
             <span class="badge bg-light text-dark">Email</span>
@@ -287,22 +313,24 @@
         </div>
         <!-- Recent Service item -->
         <div class="col-lg-4 col-6 mb-4 element-item apps">
-          <a href="assets/services/5.jpg" class="popup-link">
+          <a role="link" aria-label="Serviço recente-5" href="assets/services/5.jpg" class="popup-link">
             <p class="visually-hidden">Service item</p>
-            <img src="assets/services/5.jpg" alt="" class="img-fluid mb-2">
+            <img role="img" aria-label="Imagem de Serviço Recente-5" src="assets/services/5.jpg" alt=""
+              class="img-fluid mb-2">
           </a>
-          <h5 class="text-uppercase mb-1">Lorem Ipsun</h5>
+          <h5 role="heading" class="text-uppercase mb-1">Lorem Ipsun</h5>
           <p class="mb-0">
             <span class="badge bg-light text-dark">Apps</span>
           </p>
         </div>
         <!-- Recent Service item -->
         <div class="col-lg-4 col-6 mb-4 element-item website apps">
-          <a href="assets/services/6.jpg" class="popup-link">
+          <a role="link" aria-label="Serviço recente-6" href="assets/services/6.jpg" class="popup-link">
             <p class="visually-hidden">Service item</p>
-            <img src="assets/services/6.jpg" alt="" class="img-fluid mb-2">
+            <img role="img" aria-label="Imagem de Serviço Recente-6" src="assets/services/6.jpg" alt=""
+              class="img-fluid mb-2">
           </a>
-          <h5 class="text-uppercase mb-1">Lorem Ipsun</h5>
+          <h5 role="heading" class="text-uppercase mb-1">Lorem Ipsun</h5>
           <p class="mb-0">
             <span class="badge bg-light text-dark">Website</span>
             <span class="badge bg-light text-dark">Apps</span>
@@ -310,11 +338,12 @@
         </div>
         <!-- Recent Service item -->
         <div class="col-lg-4 col-6 mb-4 element-item website graphics">
-          <a href="assets/services/7.jpg" class="popup-link">
+          <a role="link" aria-label="Serviço recente-7" href="assets/services/7.jpg" class="popup-link">
             <p class="visually-hidden">Service item</p>
-            <img src="assets/services/7.jpg" alt="" class="img-fluid mb-2">
+            <img role="img" aria-label="Imagem de Serviço Recente-7" src="assets/services/7.jpg" alt=""
+              class="img-fluid mb-2">
           </a>
-          <h5 class="text-uppercase mb-1">Lorem Ipsun</h5>
+          <h5 role="heading" class="text-uppercase mb-1">Lorem Ipsun</h5>
           <p class="mb-0">
             <span class="badge bg-light text-dark">Website</span>
             <span class="badge bg-light text-dark">Gráficos</span>
@@ -322,22 +351,24 @@
         </div>
         <!-- Recent Service item -->
         <div class="col-lg-4 col-6 mb-4 element-item email">
-          <a href="assets/services/8.jpg" class="popup-link">
+          <a role="link" aria-label="Serviço recente-8" href="assets/services/8.jpg" class="popup-link">
             <p class="visually-hidden">Service item</p>
-            <img src="assets/services/8.jpg" alt="" class="img-fluid mb-2">
+            <img role="img" aria-label="Imagem de Serviço Recente-8" src="assets/services/8.jpg" alt=""
+              class="img-fluid mb-2">
           </a>
-          <h5 class="text-uppercase mb-1">Lorem Ipsun</h5>
+          <h5 role="heading" class="text-uppercase mb-1">Lorem Ipsun</h5>
           <p class="mb-0">
             <span class="badge bg-light text-dark">Email</span>
           </p>
         </div>
         <!-- Recent Service item -->
         <div class="col-lg-4 col-6 mb-4 element-item apps graphics">
-          <a href="assets/services/9.jpg" class="popup-link">
+          <a role="link" aria-label="Serviço recente-9" href="assets/services/9.jpg" class="popup-link">
             <p class="visually-hidden">Service item</p>
-            <img src="assets/services/9.jpg" alt="" class="img-fluid mb-2">
+            <img role="img" aria-label="Imagem de Serviço Recente-9" src="assets/services/9.jpg" alt=""
+              class="img-fluid mb-2">
           </a>
-          <h5 class="text-uppercase mb-1">Lorem Ipsun</h5>
+          <h5 role="heading" class="text-uppercase mb-1">Lorem Ipsun</h5>
           <p class="mb-0">
             <span class="badge bg-light text-dark">Apps</span>
             <span class="badge bg-light text-dark">Gráficos</span>
@@ -349,8 +380,8 @@
 
     <!-- Attest begins -->
     <section id="attest" class="container block">
-      <h2 class="title text-center">Depoimentos</h2>
-      <h4 class="sub-title text-center mb-4">Et sumi kapa namur aondeai rocus pocus</h4>
+      <h2 role="heading" class="title text-center">Depoimentos</h2>
+      <h4 role="heading" class="sub-title text-center mb-4">Et sumi kapa namur aondeai rocus pocus</h4>
       <div class="owl-carousel owl-theme owl-loaded">
         <div>
           <div class="attest-item">
@@ -361,7 +392,8 @@
                 voluptate, dolorem itaque voluptatum.</p>
               <p class="name"><span>Douglas Oliveira</span> / Web Development Student</p>
               <p class="mb-0">
-                <img src="assets/quote.svg" alt="" class="quote float-end">
+                <img role="img" aria-label="Imagem de uma vírgula de enfeite" src="assets/quote.svg"
+                  alt="Imagem de uma vírgula de enfeite" class="quote float-end">
               </p>
             </div>
           </div>
@@ -375,7 +407,8 @@
                 voluptate, dolorem itaque voluptatum.</p>
               <p class="name"><span>Douglas Oliveira</span> / Web Development Student</p>
               <p class="mb-0">
-                <img src="assets/quote.svg" alt="" class="quote float-end">
+                <img role="img" aria-label="Imagem de uma vírgula de enfeite" src="assets/quote.svg"
+                  alt="Imagem de uma vírgula de enfeite" class="quote float-end">
               </p>
             </div>
           </div>
@@ -389,7 +422,8 @@
                 voluptate, dolorem itaque voluptatum.</p>
               <p class="name"><span>Douglas Oliveira</span> / Web Development Student</p>
               <p class="mb-0">
-                <img src="assets/quote.svg" alt="" class="quote float-end">
+                <img role="img" aria-label="Imagem de uma vírgula de enfeite" src="assets/quote.svg"
+                  alt="Imagem de uma vírgula de enfeite" class="quote float-end">
               </p>
             </div>
           </div>
@@ -403,7 +437,8 @@
                 voluptate, dolorem itaque voluptatum.</p>
               <p class="name"><span>Douglas Oliveira</span> / Web Development Student</p>
               <p class="mb-0">
-                <img src="assets/quote.svg" alt="" class="quote float-end">
+                <img role="img" aria-label="Imagem de uma vírgula de enfeite" src="assets/quote.svg"
+                  alt="Imagem de uma vírgula de enfeite" class="quote float-end">
               </p>
             </div>
           </div>
@@ -417,7 +452,8 @@
                 voluptate, dolorem itaque voluptatum.</p>
               <p class="name"><span>Douglas Oliveira</span> / Web Development Student</p>
               <p class="mb-0">
-                <img src="assets/quote.svg" alt="" class="quote float-end">
+                <img role="img" aria-label="Imagem de uma vírgula de enfeite" src="assets/quote.svg"
+                  alt="Imagem de uma vírgula de enfeite" class="quote float-end">
               </p>
             </div>
           </div>
@@ -431,60 +467,67 @@
   <!-- Footer begins -->
   <footer id="contact" class="container">
     <div class="contact mb-4">
-      <img src="assets/paperplane.svg" alt="Imagem de um Avião de Papel" class="img-fluid paper-plane-img">
-      <h2 class="title text-center">Fique por dentro das novidades</h2>
-      <h4 class="sub-title text-center mb-4">Et sumi kapa namur aondeai rocus pocus est talaraum</h4>
+      <img role="img" aria-label="Imagem de um Avião de Papel" src="assets/paperplane.svg"
+        alt="Imagem de um Avião de Papel" class="img-fluid paper-plane-img">
+      <h2 role="heading" class="title text-center">Fique por dentro das novidades</h2>
+      <h4 role="heading" class="sub-title text-center mb-4">Et sumi kapa namur aondeai rocus pocus est talaraum</h4>
       <form action="">
         <div class="flex-md-grow-1 pe-md-3 pb-md-0 pb-3">
           <label for="contact-email" class="visually-hidden">Email</label>
-          <input type="email" name="contact-email" id="contact-email" class="form-control w-100 mb-2"
+          <input role="textbox" type="email" name="contact-email" id="contact-email" class="form-control w-100 mb-2"
             placeholder="seu email">
         </div>
         <div class="flex-grow-1 flex-md-grow-0">
-          <button type="submit" class="btn btn-light button mb-3 d-md-inline d-block w-100">cadastre-se</button>
+          <button type="submit" aria-label="Enviar email para cadastro"
+            class="btn btn-light button mb-3 d-md-inline d-block w-100">cadastre-se</button>
         </div>
       </form>
     </div>
     <div class="social-footer">
       <div class="row footer-logo justify-content-between text-center text-md-start">
         <div class="col-md-6 align-self-center">
-          <a href="#header">
+          <a role="link" aria-label="Ínicio" href="#header">
             <p class="visually-hidden">Início</p>
-            <img src="assets/logo.svg" alt="Logo do Footer" title="Logo do Footer" class="image-fluid">
+            <img role="img" aria-label="Imagem do Logo da empresa" src="assets/logo.svg" alt="Logo do Footer"
+              title="Logo do Footer" class="image-fluid">
           </a>
         </div>
         <div class="col-md-6 align-self-center text-right social-links">
           <ul>
-            <li>
-              <a href="https://www.facebook.com/" target="_blank" title="Facebook">
+            <li">
+              <a role="link" aria-label="Rede Social Facebook" href="https://www.facebook.com/" target="_blank"
+                title="Facebook">
                 <p class="visually-hidden">Facebook</p>
-                <i class="fab fa-facebook-f"></i>
+                <i role="img" aria-label="Facebook" class="fab fa-facebook-f"></i>
               </a>
-            </li>
-            <li>
-              <a href="https://www.twitter.com/" target="_blank" title="Twitter">
-                <p class="visually-hidden">Twitter</p>
-                <i class="fab fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/" target="_blank" title="Instagram">
-                <p class="visually-hidden">Instagram</p>
-                <i class="fab fa-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.Linkedin.com/" target="_blank" title="Linkedin">
-                <p class="visually-hidden">Linkedin</p>
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.Youtube.com/" target="_blank" title="Youtube">
-                <p class="visually-hidden">Youtube</p>
-                <i class="fab fa-youtube ps-0"></i>
-              </a>
-            </li>
+              </li>
+              <li>
+                <a role="link" aria-label="Rede Social Twitter" href="https://www.twitter.com/" target="_blank"
+                  title="Twitter">
+                  <p class="visually-hidden">Twitter</p>
+                  <i role="img" aria-label="Twitter" class="fab fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a role="link" aria-label="Rede Social Instagram" href="https://www.instagram.com/" target="_blank"
+                  title="Instagram">
+                  <p class="visually-hidden">Instagram</p>
+                  <i role="img" aria-label="Instagram" class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a role="link" aria-label="Rede Social Linkedin" href="https://www.Linkedin.com/" target="_blank"
+                  title="Linkedin">
+                  <p class="visually-hidden">Linkedin</p>
+                  <i role="img" aria-label="Linkedin" class="fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li>
+                <a role="link" aria-label="Youtube" href="https://www.Youtube.com/" target="_blank" title="Youtube">
+                  <p class="visually-hidden">Youtube</p>
+                  <i role="img" aria-label="Youtube" class="fab fa-youtube ps-0"></i>
+                </a>
+              </li>
           </ul>
         </div>
       </div>
