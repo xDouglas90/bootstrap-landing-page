@@ -259,31 +259,44 @@ a.client-link:hover img {
 
 /* Footer social links */
 
-.social-links {
-  max-width: 18rem;
+.social-links ul {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  padding: 0;
 }
 
-.social-links a {
+.social-links ul li {
+  display: flex;
+  list-style-type: none;
+  margin-left: 25px;
+}
+
+.social-links ul li i {
+  font-size: 1.5rem;
+}
+
+.social-links ul li:first-child {
+  margin-left: 0;
+}
+
+.social-links ul li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: transparent;
-  color: var(--primary-dark);
-  font-size: 2rem;
+  border-radius: 20px;
+  height: 40px;
   transition: var(--transition);
   text-decoration: none;
+  width: 40px;
 }
 
-.social-links a:not(:last-child) {
-  margin-right: 1rem;
-}
-
-.social-links a:hover {
+.social-links ul li a:hover {
   background-color: var(--bs-white);
-}
-
-.social-links a i {
-  border-bottom: 3px solid transparent;
-}
-
-.social-links a i:hover {
   box-shadow: var(--box-shadow-thin);
-  border-bottom: 3px solid var(--secondary);
+}
+
+.social-links ul li i {
+  max-height: 20px;
 }
