@@ -255,7 +255,7 @@ a.client-link:hover img {
 /* Footer social links */
 
 .social-links {
-  max-width: 17rem;
+  max-width: 18rem;
 }
 
 .social-links a {
@@ -263,6 +263,7 @@ a.client-link:hover img {
   color: var(--primary-dark);
   font-size: 2rem;
   transition: var(--transition);
+  text-decoration: none;
 }
 
 .social-links a:not(:last-child) {
