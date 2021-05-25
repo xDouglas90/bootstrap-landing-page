@@ -64,7 +64,9 @@
   .social-links {
     display: contents;
     margin: 40px 20px 0 20px;
-
   }
 
+  .social-links ul {
+    display: contents;
+  }
 }
