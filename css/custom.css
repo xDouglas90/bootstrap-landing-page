@@ -5,11 +5,6 @@ html {
   ;
 }
 
-body {
-  background: url(../assets/footer-bg.png) no-repeat center bottom;
-  padding-bottom: 25rem;
-}
-
 /* Header */
 #header {
   background-color: transparent;
