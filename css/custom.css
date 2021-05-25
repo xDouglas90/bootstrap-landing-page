@@ -33,7 +33,7 @@ html {
 
 #header .nav-link:hover {
   border-bottom: 4px solid var(--secondary);
-  color: var(--secondary);
+  color: var(--primary);
 }
 
 /* Slider Section*/
@@ -258,11 +258,26 @@ a.client-link:hover img {
   max-width: 17rem;
 }
 
-.social-links i {
+.social-links a {
+  background-color: transparent;
   color: var(--primary-dark);
   font-size: 2rem;
+  transition: var(--transition);
 }
 
-.social-links i:not(:last-child) {
+.social-links a:not(:last-child) {
   margin-right: 1rem;
+}
+
+.social-links a:hover {
+  background-color: var(--bs-white);
+}
+
+.social-links a i {
+  border-bottom: 3px solid transparent;
+}
+
+.social-links a i:hover {
+  box-shadow: var(--box-shadow-thin);
+  border-bottom: 3px solid var(--secondary);
 }
