@@ -5,7 +5,7 @@ Projeto consiste em uma landing page de uma empresa de marketing.
 Projeto pode ser visualizado pelo link: [**bootstrap5-landingpage.netlify.app**](https://bootstrap5-landingpage.netlify.app/ "**bootstrap5-landingpage.netlify.app**")
 
 Preview:
-[![Preview](https://media.giphy.com/media/bJciqESTXNMMv14jH4/giphy.gif "Preview")](httphttps://media.giphy.com/media/bJciqESTXNMMv14jH4/giphy.gif:// "Preview")
+[![Preview](https://media.giphy.com/media/bJciqESTXNMMv14jH4/giphy.gif "Preview")](https://media.giphy.com/media/bJciqESTXNMMv14jH4/giphy.gif "Preview")
 
 ------------
 
@@ -40,7 +40,7 @@ Preview:
 
 ------------
 
-##Referências:
+## Referências:
 
 - [Bootstrap 5 Tutorial: Crie um website responsivo com HTML e CSS](https://www.youtube.com/watch?v=ItwUZ4fK6hQ "Bootstrap 5 Tutorial: Crie um website responsivo com HTML e CSS")
 - [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/ "Bootstrap 5")
